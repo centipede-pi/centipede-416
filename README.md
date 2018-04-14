@@ -22,6 +22,6 @@ and allows for more advanced management and security. Some features:
 Perhaps most interesting is the ability to configure a .onion address for your Centipede, allowing you to log in securely from around 
 the world using end-to-encryption and hiding the address of your Centipede in the process. This requires use of the Tor network, and
 can be done using the Tor browser from a desktop, Orbot from an Android device, or Kronymous from your Chrome browser:
-https://www.torproject.org/download/download-easy.html.en
-https://guardianproject.info/apps/orbot/
-https://chrome.google.com/webstore/detail/kronymous-access-internet/dfdhngcahhplaibahkkjhdklhihbaikl?hl=en
+* Tor Browser: https://www.torproject.org/download/download-easy.html.en
+* Orbot: https://guardianproject.info/apps/orbot/
+* Kronymous: https://chrome.google.com/webstore/detail/kronymous-access-internet/dfdhngcahhplaibahkkjhdklhihbaikl?hl=en
