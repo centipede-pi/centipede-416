@@ -6,10 +6,10 @@ a public preview state and not guaranteed to work (especially with Apple devices
 
 In order to install we assume you have ssh access to your device. Log in and run:
 
-  git clone https://github.com/centipede-pi/centipede-416
-  cd centipede-416
-  chmod +x install.sh
-  ./install.sh
+ * git clone https://github.com/centipede-pi/centipede-416
+ * cd centipede-416
+ * chmod +x install.sh
+ * ./install.sh
   
 Your device will update and then reboot to the new image. Most of the changes besides the new color scheme) are found in the Options tab
 and allows for more advanced management and security. Some features:
