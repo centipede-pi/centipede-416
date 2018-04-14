@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Post Helper</title>
+</head>
+
+
+
+<body onLoad="update()">
+<form method='post' id='helper'>
+</form>
+
+<script type="text/javascript">
+function update() {
+//    console.log( window.location.href );
+    [url,act] = window.location.href.split('?');
+    console.log( "URL --   "  + url );
+    console.log( "ACT --   "  + act );
+
+    act = act.split('&');
+    f = document.getElementById("helper");
+    [n,v] = act[0].split('=');
+    f.action = v;
+    console.log( "action set to: " + v );
+    for( i=1; i<act.length; i++ ) {
+           [n,v] = act[i].split('=');
+           console.log( "n=" + n + ",  v=" + v );
+           var input = document.createElement('input');
+           input.type = 'hidden';
+           input.name = n;
+           input.value = v;
+           f.appendChild(input);
+           }
+    f.submit();
+    }
+</script>
+</body>
+
+</html>

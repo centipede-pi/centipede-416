@@ -1,0 +1,17 @@
+body {
+  background: linear-gradient(to bottom right, dimgray, black);
+  background-attachment: fixed;
+}
+
+.control_iframe {
+  background-color: dimgray;
+}
+
+a:link {
+  color: #BFC9CA;
+}
+
+a:visited {
+  color: #839192;
+}
+

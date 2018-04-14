@@ -1,0 +1,53 @@
+<style type='text/css'>
+
+input[type=range]{
+  -webkit-appearance: none;        /* webkit is for Amazon Fire tablet */
+  border: 1px solid white;         /*fix for FF unable to apply focus style bug */
+  width: 100px;                    /*required for proper track sizing in FF*/
+  }
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100px;
+  height: 15px;
+  background: #AAA;
+  border: none;
+  border-radius: 3px;
+  }
+
+input[type=range]::-moz-range-track {
+/*    width: 100px;          let width be scaled automatically */
+    height: 15px;
+    background: #AAA;
+    border: none;
+    border-radius: 3px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 40px;
+    width: 20px;
+    border-radius: 25%;
+    background: blue;
+    margin-top: -14px;
+    }
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    height: 40px;
+    width: 20px;
+    border-radius: 25%;
+    background: blue;
+}
+input[type=range]:focus {
+    outline: none;
+    }
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #888;
+    }
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring{
+    outline: 1px solid white;
+    outline-offset: -1px;
+    }
+
+</style>

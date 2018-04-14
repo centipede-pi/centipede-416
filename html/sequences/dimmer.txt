@@ -1,0 +1,46 @@
+# This is to demonstrate the OPEN/POST/CLOSE commands
+#
+#   lights:   off    wall      on
+#   dimmer:   0-100
+#   beep:     off    single    on
+#   control:  web    wall
+#   ac:       on     off
+#   unlock:   now
+#
+POST http://10.0.5.2/login.htm action=LOGIN user=Robert password=123456
+WAIT SECONDS=3
+CLOSE
+
+OPEN http://10.0.5.2/control.htm?dimmer=50&control=web&lights=on
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=45
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=40
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=35
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=30
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=25
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=20
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=15
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=10
+WAIT SECONDS=5
+CLOSE
+OPEN http://10.0.5.2/control.htm?dimmer=5&lights=off
+WAIT SECONDS=5
+CLOSE
+
+
+STOP

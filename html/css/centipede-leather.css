@@ -1,0 +1,16 @@
+body {
+  background-image: url("/images/leather.jpg");
+  background-attachment: fixed;
+}
+
+.control_iframe {
+  background-color: saddlebrown;
+}
+
+a:link {
+  color: #F4D03F;
+}
+
+a:visited {
+  color: #E59866;
+}
